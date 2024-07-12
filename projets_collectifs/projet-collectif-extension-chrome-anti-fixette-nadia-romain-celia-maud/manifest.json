@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "service-worker.js"
+      },
+    "name": "Anti-Fixette",
+    "version": "1.0",
+    "description": "Vas faire un tour ♥",
+        "icons": {              
+            "16": "images/icon16.png",
+            "32": "images/icon16.png",
+            "48": "images/icon16.png",
+            "128": "images/icon16.png"    
+    },
+    "permissions": ["activeTab", "storage", "tabs"],
+    "action": {
+        "default_title": "Click Me",
+        "default_popup": "index.html"  
+      },
+
+    "content_scripts": [
+        {
+            "js": ["script.js"],
+            "type" : "module",
+            "matches": [
+                "https://www.google.com/*",
+                "https://www.youtube.com/*",
+                "https://www.facebook.com/*",
+                "https://www.instagram.com/*",
+                "https://twitter.com/*",
+                "https://fr.wikipedia.org/*",
+                "https://fr.yahoo.com/*",
+                "https://web.whatsapp.com/*",
+                "https://www.xvideos.com/*",
+                "https://www.tiktok.com/*",
+                "https://www.amazon.com/*",
+                "https://www.amazon.fr/*",
+                "https://www.reddit.com/*",
+                "https://www.pornhub.com/*"
+            ]
+        }
+    ]
+}  
+

@@ -1,2 +1,2 @@
 # ada-tech-school
-Projects from my time at Ada Tech School ♥
+projects I've done while my Ada Tech School formation ♥

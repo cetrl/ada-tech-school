@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kalnia:wght@100..700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kalnia:wght@100..700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: rgb(29, 13, 46);
+    font-family: "Kalnia", serif;
+    --hover-color: #99b;
+    --main-bc-color: #ffffff;
+}
+
+a{text-decoration: none; color:black;}
+a:hover{text-decoration: underline;}
+
+body>header{
+    display:flex;
+    width:80em;
+    margin:0 auto 2em auto;    
+    padding:0;
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--main-bc-color);
+}
+body>header img{
+    height:5em;
+    display: none;
+}
+body>header #menu {
+    font-size: 1.5em;
+    display:flex;
+    width:70%;
+    align-items: stretch;
+}
+body>header #menu a{
+    color: var(--main-bc-color);
+    flex:1;
+    text-align: center;
+    margin: 10px;
+}
+body>header #menu a:hover
+{
+    transition: font-size 200ms ease-in-out;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+body>header ul{list-style: none;}
+body>header #user
+{
+    margin-left: auto;
+    flex:0.2;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 40
+  }
+
+body>header #user>a{
+    color:var(--main-bc-color);
+    display:block;
+    text-align: center;
+    padding:1.2em 0;
+    /* width:100%; */
+}
+body>header #user ul{ 
+    display: none;
+    position: absolute;
+    padding:0;
+    margin:0;
+    margin-left:-5em;
+    background-color: var(--main-bc-color);
+    border: 1px solid var(--hover-color);
+
+    z-index: 1;
+}
+body>header #user ul li a{
+    display:block;
+    width:10em;
+    padding:1em;
+    border-bottom: 1px solid var(--hover-color);
+}
+body>header #user:hover ul{
+    display:block;
+}
+
+
+#wrapper{
+    display:flex;    
+    width:70em;
+    margin:0 auto 2em auto;
+}
+#wrapper aside{
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--main-bc-color);
+    flex:1;
+    padding:1em;
+    border-radius: 1em;   
+    margin-left: -100px; 
+}
+#wrapper aside img{
+    display: none;
+    width:50%;
+    margin:auto;
+}
+
+#wrapper aside p{
+    font-family: "Noto Sans", sans-serif;
+}
+
+#wrapper main{
+    flex:3;
+    padding-left:1em;
+    height: 80vh;
+    overflow-y:  scroll;
+}
+#wrapper main article{
+    background-color: var(--main-bc-color);
+    opacity: 90%;
+    padding:1.2em;
+    margin: 1em ;
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px white;
+}
+
+#wrapper main article:hover {
+    background-color: var(--main-bc-color);
+    transition: opacity 500ms;
+    opacity: 100%;
+    padding:1.2em;
+    margin: 1em ;
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px white;
+}
+
+#wrapper main article h3{
+    margin:0;
+    padding:0;
+    font-weight: normal;
+    font-size:1em;
+
+}
+#wrapper main article time{
+    color: var(--hover-color);
+    font-family: "Noto Sans", sans-serif;
+    float:left;
+}
+#wrapper main article address{
+    text-align: right;
+    margin-bottom: 1em;
+}
+#wrapper main article p{
+    font-family: "Noto Sans", sans-serif;
+    margin:0;
+}
+#wrapper main article footer{
+    margin-top: 1em;
+    text-align: right;
+}
+#wrapper main article footer small{
+    float:left;
+}
+
+#wrapper.admin{flex-direction: row-reverse}
+#wrapper.admin aside{flex:1;margin-left:1em;border-radius:0;padding:0;}
+#wrapper.admin main{flex:2;background-color: var(--main-bc-color);border-radius: 0;padding:0;}
+#wrapper.admin h2{text-align: center;}
+#wrapper.admin h3{margin:0;}
+#wrapper.admin nav{text-align: right;}
+#wrapper.admin article{border:1px solid var(--main-bc-color);border-radius: 1em;padding:1em;margin:1em;}
+#wrapper.admin article p{float:left;margin:0;}
+
+
+.parameters dl dt{float:left;font-weight: bold;line-height: 1.5em;}
+.parameters dl dd{margin-left:15em;line-height: 1.5em;}
+
+.contacts {
+    display:flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    align-content: flex-start ;
+}
+.contacts article{
+    width:25em;
+    height:7em;
+    margin-right: 1em;
+}
+.contacts article img{
+    float:right;
+    height: 5em;
+    display: none;
+}
+
+pre{
+    color:#aaa;
+}
+
+h3 a {color: var(--main-bc-color);}
+
+.contacts article h3 a{color: black;}

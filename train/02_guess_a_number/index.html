@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_guess_a_number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Guess a number</h1>
+    <article id="1">
+            <label for="j1">J1, enter a number between 0 and 50.</label>
+            <p>
+                <input type="number" id="j1" name="j1number">
+            </p>
+            <button onclick="goToStep2()">✔</button>
+    </article>
+
+    <article id="2" class="invisible">
+            <label for="j2">J2, guess the number</label>
+            <p><span id="min">0< </span>
+                <input type="number" id="j2" name="j2number">
+                <span id="max"> <50 </span>
+            </p>
+            <button onclick="checkResult()">✔</button>
+    </article>
+    
+    <div id="output"></div>
+    <h1 id="bravo" class="invisible">Bravo !</h1>
+
+ <script src="script.js"></script>   
+</body>
+</html>

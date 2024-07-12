@@ -1,0 +1,46 @@
+        body {
+            text-align: center;
+            background: #262530;
+            color: #ffffff;
+            height: 100vh;
+            font-size: 2em;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        h1 {
+            margin-top: 100px;
+        }
+
+        article {
+            margin: 100px;
+            background: #ffffff;
+            color: #262530;
+            padding: 20px;
+            border-radius: 10%;
+
+        }
+
+        .invisible {
+            display: none;
+        }
+
+        .visible {
+            display:  block;
+        }
+
+        input {
+            font-size: 1em;
+            width: 100px;
+        }
+
+        button {
+            background : #262530;
+            color: #ffffff;
+            font-size: 1em;
+            border-radius: 20%;
+        }
+
+        button:hover {
+            background: #363540;
+        }
