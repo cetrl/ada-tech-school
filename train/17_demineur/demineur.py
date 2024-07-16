@@ -1,14 +1,14 @@
 import random
 
-#remplace randomly 0 cells by 1 cells
 def replace_empty(grid, c):
-    m = len(grid[0])  # columns nb
-    print(c)
+    m = len(grid)  # number of rows
+    n = len(grid[0])  # number of columns
     for i in c:
-        row = i // m
-        col = i % m
-        if grid[row][col] == 0:  #vérifie que la cell est bien negative
-            grid[row][col] = 1   #la rend positive
+        row = i // n
+        col = i % n
+        if 0 <= row < m and 0 <= col < n:  # Check if within bounds
+            if grid[row][col] == 0:
+                grid[row][col] = 1
     return grid
 
 # create grid with m² cells
