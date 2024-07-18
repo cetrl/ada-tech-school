@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "test": "jest"
+    },
+    "name": "palindromes",
+    "version": "1.0.0",
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}
